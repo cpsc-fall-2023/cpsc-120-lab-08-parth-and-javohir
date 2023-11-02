@@ -26,10 +26,16 @@ int main(int argc, char* argv[]) {
   // Each argument is a std::string. You will need to convert each string into
   // a number with the std::stod or std::stof function.
   double sum{0.0};
-  for (int i = 1; i < arguments.size(); i++) {
-    double num = std::stod(arguments[i]);
+  // for (int i = 1; i < arguments.size(); i++) {
+  //   double num = std::stod(arguments[i]);
+  //   sum = sum + num;
+  // }
+
+  for (std ::string const& arg : arguments) {
+    double num = std::stod(arg);
     sum = sum + num;
   }
+
   // Done: After the loop has finished summing the arguments, calculate the
   // average of the values. Recall that the average is the total value divided
   // by the number of values.
