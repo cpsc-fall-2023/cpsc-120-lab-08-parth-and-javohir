@@ -21,7 +21,7 @@ int main(int argc, char* argv[]) {
       continue;
     }
     double num{std::stod(argument)};
-    total = total +  num;
+    total = total + num;
   }
   double denom{static_cast<double>(arguments.size() - 1)};
   double avg = total / denom;
